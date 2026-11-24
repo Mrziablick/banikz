@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Бани KZ — банный комплекс на дровах в Астане | Бронь онлайн</title>
+  <meta name="description" content="Бани KZ — банный комплекс на дровах в Астане, ул. Сарын 51в. Круглосуточно. Парные на дровах, купели, бильярд, караоке, кухня. Бронирование бань и меню онлайн." />
+  <meta property="og:title" content="Бани KZ — баня на дровах в Астане" />
+  <meta property="og:description" content="Забронируйте номер и закажите меню сразу. Круглосуточно, ул. Сарын 51в." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="Бани KZ — на главную">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M6 26V14l10-8 10 8v12" stroke-linejoin="round"/>
+            <path d="M12 26v-7h8v7" stroke-linejoin="round"/>
+            <path d="M16 4v3" />
+          </svg>
+        </span>
+        <span class="logo__text">Бани<span>KZ</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#rooms">Номера</a>
+        <a href="#menu">Меню</a>
+        <a href="#services">Услуги</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+        <a class="nav__phone" href="tel:+77089099055">+7 708 909 9055</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="cart-btn" id="cartBtn" type="button" aria-label="Открыть корзину меню">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M4 5h2l2.2 10.2A2 2 0 0 0 10.2 17h7.6a2 2 0 0 0 2-1.6L21 8H7" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="10.5" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/>
+          </svg>
+          <span class="cart-btn__text">Меню</span>
+          <span class="cart-btn__count" id="cartCount">0</span>
+        </button>
+        <a href="#booking" class="btn btn--primary btn--sm header__cta">Забронировать</a>
+        <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" style="background-image:url('images/hero.jpg')" aria-hidden="true"></div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__award">
+          <span class="hero__award-star">★</span>
+          Лучшая баня 2026 · 2GIS Awards
+        </div>
+        <h1 class="hero__title">
+          Настоящая баня<br />
+          <em>на дровах</em> в Астане
+        </h1>
+        <p class="hero__lead">
+          Своя парная, купель и стол, накрытый к вашему приходу.
+          Забронируйте номер и закажите меню за пару минут — остальное сделаем мы.
+        </p>
+        <div class="hero__actions">
+          <a href="#booking" class="btn btn--primary">Забронировать баню</a>
+          <a href="#menu" class="btn btn--ghost">Смотреть меню</a>
+        </div>
+        <div class="hero__rating">
+          <strong>4.9</strong>
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span>800 оценок в 2ГИС</span>
+        </div>
+      </div>
+
+      <div class="hero__strip">
+        <div class="container hero__strip-inner">
+          <div class="hero__fact"><span>Круглосуточно</span><small>без выходных</small></div>
+          <div class="hero__fact"><span>от 10 000 ₸</span><small>за час аренды</small></div>
+          <div class="hero__fact"><span>до 10 гостей</span><small>в каждом номере</small></div>
+          <div class="hero__fact"><span>Парная на дровах</span><small>русская, с веником</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMO -->
+    <section class="promo">
+      <div class="container promo__inner">
+        <p>
+          <strong>Будни до 18:00 — аренда номера за полцены.</strong>
+          После 18:00 действует акция «3+1»: бронируйте три часа — четвёртый в подарок.
+        </p>
+        <a href="#booking" class="promo__link">Забронировать со скидкой →</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">О комплексе</span>
+          <h2 class="section__title">Баня, в которой всё <em>под рукой</em></h2>
+          <p class="section__lead">
+            Бани KZ — двухэтажный банный комплекс на Юго-Востоке Астаны. Четыре номера с парными на дровах,
+            кухня с мангалом и персонал, который следит за паром, пока вы отдыхаете.
+          </p>
+        </div>
+
+        <div class="about__grid">
+          <article class="about__card reveal">
+            <span class="about__icon" aria-hidden="true">🔥</span>
+            <h3>Парная на дровах</h3>
+            <p>Настоящая русская парная: дрова, чугунная печь и мягкий пар. Веники — дубовые и берёзовые.</p>
+          </article>
+          <article class="about__card reveal">
+            <span class="about__icon" aria-hidden="true">🛁</span>
+            <h3>Купель и беседки</h3>
+            <p>Ледяная купель после пара, летние беседки и мангальные зоны на территории комплекса.</p>
+          </article>
+          <article class="about__card reveal">
+            <span class="about__icon" aria-hidden="true">🍢</span>
+            <h3>Своя кухня</h3>
+            <p>Шашлык на мангале, плов, домашние закуски и чай на травах. Готовим к вашему приходу.</p>
+          </article>
+          <article class="about__card reveal">
+            <span class="about__icon" aria-hidden="true">🎱</span>
+            <h3>Есть чем заняться</h3>
+            <p>Бильярд, караоке, настольный теннис и Wi-Fi — для компаний и семей с детьми.</p>
+          </article>
+          <article class="about__card reveal">
+            <span class="about__icon" aria-hidden="true">🌿</span>
+            <h3>Пар-мастера</h3>
+            <p>Парение с травами, мёдом и веником. Шоу парения для тех, кто хочет настоящий ритуал.</p>
+          </article>
+          <article class="about__card reveal">
+            <span class="about__icon" aria-hidden="true">🕛</span>
+            <h3>Круглосуточно</h3>
+            <p>Работаем 24/7: можно приехать после работы или остаться до утра. Парковка у входа.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOMS -->
+    <section class="section rooms" id="rooms">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Номера</span>
+          <h2 class="section__title">Выберите свою <em>баню</em></h2>
+          <p class="section__lead">Все номера с парной на дровах, полотенцами, простынями и тапочками. Цена указана за час.</p>
+        </div>
+        <div class="rooms__grid" id="roomsGrid"></div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section__head section__head--row reveal">
+          <div>
+            <span class="eyebrow">Кухня</span>
+            <h2 class="section__title">Меню <em>к банному столу</em></h2>
+            <p class="section__lead">Добавляйте блюда в заказ — мы приготовим их к вашему приходу.</p>
+          </div>
+          <div class="menu__plates">
+            <img src="images/food-grill.jpg" alt="Шашлык на мангале" />
+            <img src="images/food-tea.jpg" alt="Чай с чабрецом и баурсаки" />
+          </div>
+        </div>
+
+        <div class="menu__tabs" id="menuTabs" role="tablist" aria-label="Категории меню"></div>
+        <div class="menu__list" id="menuList"></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Дополнительно</span>
+          <h2 class="section__title">Услуги и <em>ритуалы</em></h2>
+          <p class="section__lead">Добавьте к брони — услуги появятся в общем счёте и в заявке.</p>
+        </div>
+        <div class="services__grid" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="section booking" id="booking">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Бронирование</span>
+          <h2 class="section__title">Забронировать баню <em>и стол</em></h2>
+          <p class="section__lead">Заполните заявку — подтвердим по телефону или в WhatsApp в течение 10 минут.</p>
+        </div>
+
+        <div class="booking__layout">
+          <form class="booking__form" id="bookingForm" novalidate>
+            <fieldset class="field-group">
+              <legend><span>01</span> Номер</legend>
+              <div class="booking__rooms" id="bookingRooms"></div>
+            </fieldset>
+
+            <fieldset class="field-group">
+              <legend><span>02</span> Дата и время</legend>
+              <div class="field-row">
+                <label class="field">
+                  <span>Дата</span>
+                  <input type="date" id="date" name="date" required />
+                  <small class="field__error" data-error="date"></small>
+                </label>
+                <label class="field">
+                  <span>Время заезда</span>
+                  <select id="time" name="time" required></select>
+                  <small class="field__error" data-error="time"></small>
+                </label>
+              </div>
+              <div class="field-row">
+                <label class="field">
+                  <span>Сколько часов</span>
+                  <select id="hours" name="hours"></select>
+                </label>
+                <label class="field">
+                  <span>Гостей</span>
+                  <select id="guests" name="guests"></select>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="field-group">
+              <legend><span>03</span> Услуги</legend>
+              <div class="booking__services" id="bookingServices"></div>
+            </fieldset>
+
+            <fieldset class="field-group">
+              <legend><span>04</span> Контакты</legend>
+              <div class="field-row">
+                <label class="field">
+                  <span>Имя</span>
+                  <input type="text" id="name" name="name" placeholder="Как к вам обращаться" autocomplete="name" required />
+                  <small class="field__error" data-error="name"></small>
+                </label>
+                <label class="field">
+                  <span>Телефон</span>
+                  <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___ __ __" autocomplete="tel" required />
+                  <small class="field__error" data-error="phone"></small>
+                </label>
+              </div>
+              <label class="field">
+                <span>Комментарий <i>(необязательно)</i></span>
+                <textarea id="comment" name="comment" rows="3" placeholder="Например: нужен детский стул, приедем на 20 минут позже"></textarea>
+              </label>
+            </fieldset>
+
+            <p class="booking__policy">
+              Нажимая «Отправить заявку», вы соглашаетесь на обработку персональных данных.
+              Бронь считается подтверждённой после звонка администратора. Оплата — на месте.
+            </p>
+          </form>
+
+          <aside class="summary" aria-label="Ваш заказ">
+            <div class="summary__head">
+              <h3>Ваш заказ</h3>
+              <span id="summaryRoomLabel">Классика</span>
+            </div>
+            <div class="summary__body" id="summaryBody"></div>
+            <div class="summary__total">
+              <span>Итого</span>
+              <strong id="summaryTotal">0 ₸</strong>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit" form="bookingForm" id="submitBtn">Отправить заявку</button>
+            <p class="summary__note">Бесплатная отмена за 2 часа до заезда. Оплата на месте картой или наличными.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Атмосфера</span>
+          <h2 class="section__title">Как у нас <em>внутри</em></h2>
+        </div>
+        <div class="gallery__grid">
+          <figure class="gallery__item gallery__item--wide reveal"><img src="images/hero.jpg" alt="Парная на дровах" loading="lazy" /></figure>
+          <figure class="gallery__item reveal"><img src="images/room-family.jpg" alt="Комната отдыха" loading="lazy" /></figure>
+          <figure class="gallery__item reveal"><img src="images/room-lux.jpg" alt="Купель" loading="lazy" /></figure>
+          <figure class="gallery__item reveal"><img src="images/food-grill.jpg" alt="Шашлык" loading="lazy" /></figure>
+          <figure class="gallery__item reveal"><img src="images/room-grand.jpg" alt="Бильярдная" loading="lazy" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section reviews" id="reviews">
+      <div class="container reviews__layout">
+        <div class="reviews__aside reveal">
+          <span class="eyebrow">Отзывы</span>
+          <div class="reviews__score">
+            <strong>4.9</strong>
+            <div>
+              <span class="stars">★★★★★</span>
+              <small>800 оценок · 543 отзыва в 2ГИС</small>
+            </div>
+          </div>
+          <p>«Лучшая баня 2026» по версии 2GIS Awards — спасибо нашим гостям.</p>
+          <a class="link-arrow" href="https://2gis.kz/astana/firm/70000001074768366/tab/reviews" target="_blank" rel="noopener">Все отзывы в 2ГИС →</a>
+        </div>
+        <div class="reviews__grid" id="reviewsGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="section contacts" id="contacts">
+      <div class="container contacts__layout">
+        <div class="contacts__info reveal">
+          <span class="eyebrow">Контакты</span>
+          <h2 class="section__title">Ждём вас <em>круглосуточно</em></h2>
+          <dl class="contacts__list">
+            <div><dt>Адрес</dt><dd>г. Астана, ул. Сарын, 51в<br /><small>Юго-Восток, ж/м Сарайшык — 2 этажа, вход со стороны парковки</small></dd></div>
+            <div><dt>Телефон</dt><dd><a href="tel:+77089099055">+7 708 909 9055</a><br /><small>WhatsApp и звонки — круглосуточно</small></dd></div>
+            <div><dt>Часы работы</dt><dd>Круглосуточно, без выходных</dd></div>
+            <div><dt>Instagram</dt><dd><a href="https://instagram.com/bani.kz.01" target="_blank" rel="noopener">@bani.kz.01</a></dd></div>
+          </dl>
+          <div class="contacts__actions">
+            <a href="https://2gis.kz/astana/directions/points/%7C71.519378%2C51.133275%3B70000001074768366" target="_blank" rel="noopener" class="btn btn--primary">Построить маршрут</a>
+            <a href="https://wa.me/77089099055" target="_blank" rel="noopener" class="btn btn--outline">Написать в WhatsApp</a>
+          </div>
+        </div>
+        <div class="contacts__map reveal" aria-label="Карта расположения">
+          <img src="images/room-classic.jpg" alt="Интерьер банного комплекса Бани KZ" loading="lazy" />
+          <div class="contacts__map-card">
+            <strong>Бани KZ</strong>
+            <span>ул. Сарын, 51в · Астана</span>
+            <a href="https://2gis.kz/astana/firm/70000001074768366" target="_blank" rel="noopener">Открыть в 2ГИС →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo logo--footer">
+        <span class="logo__text">Бани<span>KZ</span></span>
+      </a>
+      <p>Банный комплекс на дровах · Астана, ул. Сарын, 51в · <a href="tel:+77089099055">+7 708 909 9055</a></p>
+      <p class="footer__copy">© <span id="year"></span> Бани KZ. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky bar -->
+  <div class="mobile-bar" id="mobileBar">
+    <div>
+      <small>Итого</small>
+      <strong id="mobileTotal">10 000 ₸</strong>
+    </div>
+    <a href="#booking" class="btn btn--primary btn--sm">Забронировать</a>
+  </div>
+
+  <!-- Cart drawer -->
+  <div class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer__overlay" data-close-cart></div>
+    <div class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="drawer__head">
+        <h3 id="cartTitle">Меню к столу</h3>
+        <button class="drawer__close" type="button" data-close-cart aria-label="Закрыть">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="drawer__body" id="cartBody"></div>
+      <div class="drawer__foot" id="cartFoot">
+        <div class="drawer__total"><span>Меню</span><strong id="cartTotal">0 ₸</strong></div>
+        <button class="btn btn--primary btn--block" type="button" id="cartGoBooking">Перейти к брони</button>
+        <p class="drawer__note">Блюда добавим к счёту за номер.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success modal -->
+  <div class="modal" id="successModal" aria-hidden="true">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+      <span class="modal__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <h3 id="successTitle">Заявка принята</h3>
+      <p class="modal__lead">Номер заявки <strong id="orderId">—</strong>. Администратор свяжется с вами в течение 10 минут для подтверждения.</p>
+      <div class="modal__summary" id="modalSummary"></div>
+      <div class="modal__actions">
+        <a class="btn btn--primary" id="waLink" href="#" target="_blank" rel="noopener">Отправить в WhatsApp</a>
+        <a class="btn btn--outline" href="tel:+77089099055">Позвонить</a>
+      </div>
+      <p class="modal__hint">Если WhatsApp не открылся, просто позвоните — бронь уже у нас.</p>
+      <button class="modal__close" type="button" data-close-modal aria-label="Закрыть">Закрыть</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
